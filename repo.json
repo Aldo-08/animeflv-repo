@@ -1,0 +1,8 @@
+{
+  "name": "AnimeFLV-Repo",
+  "description": "Repo para plugin AnimeFLV en Nuvio / CloudStream",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/Aldo-08/animeflv-repo/main/plugins.json"
+  ]
+}

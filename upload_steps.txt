@@ -1,0 +1,19 @@
+PASOS PARA SUBIR A GITHUB (Aldo-08)
+=====================================
+1. Ve a https://github.com/new y crea un repo llamado: animeflv-repo
+2. En tu PC, entra a esta carpeta:
+   C:\Users\Angeles\Documents\animeflv-repo
+3. Abre PowerShell o CMD y ejecuta:
+
+git init
+git add .
+git commit -m "Plugin AnimeFLV para Nuvio"
+git branch -M main
+git remote add origin https://github.com/Aldo-08/animeflv-repo.git
+git push -u origin main
+
+Si usas GitHub CLI (gh auth login primero):
+gh repo create Aldo-08/animeflv-repo --public --source=. --push
+
+4. Una vez subido, en Nuvio agrega:
+   Configuración / Extensiones / Addons -> https://raw.githubusercontent.com/Aldo-08/animeflv-repo/main/repo.json

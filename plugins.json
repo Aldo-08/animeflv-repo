@@ -1,0 +1,11 @@
+[
+  {
+    "name": "AnimeFLV",
+    "version": 1,
+    "description": "Plugin basado en animeflv.or.at para Nuvio. Proporciona catálogo de anime.",
+    "language": "es",
+    "url": "https://raw.githubusercontent.com/Aldo-08/animeflv-repo/main/AnimeFLVProvider.cs3",
+    "status": 1,
+    "iconUrl": ""
+  }
+]

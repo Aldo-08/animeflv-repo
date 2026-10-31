@@ -1,0 +1,21 @@
+# COMANDOS PARA COPIAR Y PEGAR EN TU TERMINAL
+# Abre PowerShell o CMD en esta carpeta y pega línea por línea:
+
+# 1. Inicializa git
+# git init
+
+# 2. Crea el repo en GitHub (si tienes gh instalado y logueado)
+# gh repo create Aldo-08/animeflv-repo --public --source=. --push
+
+# 3. Si no tienes gh, crea el repo manualmente en https://github.com/new
+# y luego conecta:
+# git remote add origin https://github.com/Aldo-08/animeflv-repo.git
+
+# 4. Sube los archivos
+# git add .
+# git commit -m "AnimeFLV plugin para Nuvio"
+# git branch -M main
+# git push -u origin main
+
+# Luego en Nuvio:
+# Configuración / Extensiones / Addons -> https://raw.githubusercontent.com/Aldo-08/animeflv-repo/main/repo.json

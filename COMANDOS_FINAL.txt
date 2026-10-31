@@ -1,0 +1,17 @@
+# Copia y pega en tu terminal (PowerShell / CMD) estando en la carpeta animeflv-repo
+
+# 1. Inicializar
+# git init
+
+# 2. Agregar todos los archivos
+# git add .
+
+# 3. Commit
+# git commit -m "AnimeFLV plugin para Nuvio"
+
+# 4. Crear rama main y conectar con GitHub
+# git branch -M main
+# git remote add origin https://github.com/Aldo-08/animeflv-repo.git
+
+# 5. Subir (si el repo ya existe y está vacío; si no, crea primero en https://github.com/new)
+# git push -u origin main
