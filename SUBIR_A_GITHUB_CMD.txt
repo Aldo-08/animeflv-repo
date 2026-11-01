@@ -1,0 +1,7 @@
+REM Ejecutar paso a paso en PowerShell (con &) o cmd:
+cmd /c "C:\PROGRA~1\Git\bin\git.exe" init
+cmd /c "C:\PROGRA~1\Git\bin\git.exe" add .
+cmd /c "C:\PROGRA~1\Git\bin\git.exe" commit -m "Actualizado manifest.json + .cs3 + plugins.json + repo.json - 01/11/2026"
+cmd /c "C:\PROGRA~1\Git\bin\git.exe" remote add origin https://github.com/Aldo-08/animeflv-repo.git
+cmd /c "C:\PROGRA~1\Git\bin\git.exe" branch -M main
+cmd /c "C:\PROGRA~1\Git\bin\git.exe" push -u origin main
