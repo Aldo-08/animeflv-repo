@@ -2,6 +2,7 @@ var mainUrl = "https://animeflv.or.at";
 
 function getStreams(tmdbId, mediaType, season, episode) {
   return new Promise(function(resolve) {
+    console.log("[AnimeFLV] Fetching list...");
     fetch(mainUrl + "/anime/")
       .then(function(r) { return r.text(); })
       .then(function(html) {
@@ -26,7 +27,8 @@ function getStreams(tmdbId, mediaType, season, episode) {
           });
           animeUrl = found ? found.url : (results[0] ? results[0].url : null);
         }
-        if (!animeUrl) { resolve([]); return; }
+        console.log("[AnimeFLV] Results found:", results.length, "Anime URL:", animeUrl);
+        if (!animeUrl) { console.log("[AnimeFLV] No animeUrl"); resolve([]); return; }
         return fetch(animeUrl).then(function(r) { return r.text(); }).then(function(animeHtml) {
           var $a = cheerio.load(animeHtml);
           var episodes = [];
@@ -38,6 +40,7 @@ function getStreams(tmdbId, mediaType, season, episode) {
             var num = m ? parseInt(m[1]) : ((txt || "").match(/(\d+)/) ? parseInt((txt || "").match(/(\d+)/)[1]) : null);
             if (num && href) episodes.push({ episode: num, url: href });
           });
+          console.log("[AnimeFLV] Episodes found:", episodes.length);
           var targetEp = episode ? episodes.find(function(e) { return e.episode === episode; }) : episodes[episodes.length - 1];
           if (!targetEp) { resolve([]); return; }
           return fetch(targetEp.url).then(function(r) { return r.text(); }).then(function(epHtml) {
@@ -67,6 +70,7 @@ function getStreams(tmdbId, mediaType, season, episode) {
                 streams.push({ name: "AnimeFLV", url: direct, quality: "Unknown", headers: { Referer: targetEp.url } });
               }
             }
+            console.log("[AnimeFLV] Streams found:", streams.length);
             resolve(streams);
           });
         });
