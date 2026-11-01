@@ -2,7 +2,7 @@
   {
     "name": "AnimeFLV",
     "version": 1,
-    "description": "Plugin basado en animeflv.or.at para Nuvio. Proporciona catálogo de anime.",
+    "description": "Plugin actualizado AnimeFLV para Nuvio. API del repositorio recloudstream/extensions. Compilado 01/11/2026.",
     "language": "es",
     "url": "https://raw.githubusercontent.com/Aldo-08/animeflv-repo/main/AnimeFLVProvider.cs3",
     "status": 1,

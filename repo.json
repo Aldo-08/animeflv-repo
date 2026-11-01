@@ -1,8 +1,9 @@
 {
-  "name": "AnimeFLV-Repo",
-  "description": "Repo para plugin AnimeFLV en Nuvio / CloudStream",
-  "manifestVersion": 1,
-  "pluginLists": [
-    "https://raw.githubusercontent.com/Aldo-08/animeflv-repo/main/plugins.json"
-  ]
+  "name": "AnimeFLVProvider",
+  "version": 1,
+  "description": "AnimeFLV plugin actualizado a API recloudstream/extensions. Compilado con Gradle 8.12 + Kotlin 2.0.20.",
+  "author": "Aldo-08 / Angeles",
+  "status": 1,
+  "language": "es",
+  "url": "https://raw.githubusercontent.com/Aldo-08/animeflv-repo/main/AnimeFLVProvider.cs3"
 }
