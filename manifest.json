@@ -1,9 +1,8 @@
 {
-  "name": "AnimeFLV",
-  "version": 1,
-  "plugin_file": "https://raw.githubusercontent.com/Aldo-08/animeflv-repo/main/AnimeFLVProvider.cs3",
-  "repo_json": "https://raw.githubusercontent.com/Aldo-08/animeflv-repo/main/repo.json",
-  "plugins_json": "https://raw.githubusercontent.com/Aldo-08/animeflv-repo/main/plugins.json",
-  "status": 1,
-  "language": "es"
+  "name": "AnimeFLVProvider",
+  "description": "AnimeFLV plugin actualizado para Nuvio.",
+  "manifestVersion": "1",
+  "pluginLists": [
+    "https://raw.githubusercontent.com/Aldo-08/animeflv-repo/main/plugins.json"
+  ]
 }
